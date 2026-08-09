@@ -210,9 +210,8 @@ fn listbox_on_row_click(
             .insert(ActiveDescendant(Some(row_id)));
 
         // List row is disabled.
-        if let (_, disabled) = q_listitems.get(row_id).unwrap()
-            && disabled
-        {
+        let (_, disabled) = q_listitems.get(row_id).unwrap();
+        if disabled {
             return;
         }
 

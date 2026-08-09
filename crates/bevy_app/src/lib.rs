@@ -1,3 +1,4 @@
+#![feature(cfg_select)]
 #![cfg_attr(
     any(docsrs, docsrs_dep),
     expect(
